@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Header scroll effect
+    // Scroll do site
     const header = document.getElementById('header');
     
     window.addEventListener('scroll', function() {
@@ -10,14 +10,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Mobile menu toggle
+    // Menu Hamburger para Mobile
     const menuToggle = document.querySelector('.menu-toggle');
     
     if (menuToggle) {
         menuToggle.addEventListener('click', function() {
             menuToggle.classList.toggle('active');
             
-            // Animate the hamburger icon
+            // Annimar o Menu Hamburger
             const bars = menuToggle.querySelectorAll('.bar');
             if (menuToggle.classList.contains('active')) {
                 bars[0].style.transform = 'rotate(45deg) translate(6px, 6px)';
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Smooth scroll for internal links
+    // Scroll suave para links internos
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
